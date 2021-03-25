@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    background-image: url("img/ep-yell.svg");
+    background-repeat: no-repeat;
+    background-position: 50vw -5vw;
+    background-size: 60vw;
+}
+
+/*nav-menu*/
+
+nav {
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 7vw;
+    background-color: #FFEB73;
+    z-index: 1;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.nav__list_item {
+    flex-basis: 20%;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+.nav__list_item:hover {
+    border-bottom: 0.7vw solid #e6d085;
+    transition: 0.5s;
+}
+
+.nav__list_link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav__list_logo-cont:hover {
+    border-bottom: none;
+}
+
+.nav__list_logo {
+    width: 70%;
+}
+
+/*header-block*/
+
+header {
+    margin-top: 8vw;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header__hello {
+    justify-content: left;
+    flex-basis: 95%;
+}
+
+.header__hello_header {
+    font-size: 4vw;
+    font-family: 'Roboto Thin', sans-serif;
+}
+
+.header__hello_text {
+    font-size: 2vw;
+}
+
+/*news-block*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100vw;
+    width: 100%;
+}
+
+article {
+    height: 100%;
+}
+
+.news {
+    margin-top: 8vw;
+    width: 90%;
+}
+
+.news__articles {
+    width: 100%;
+}
+
+.news__title {
+    width: 20vw;
+    font-size: 3vw;
+    font-family: 'Roboto Thin', sans-serif;
+    border-bottom: 0.8vw solid #E2B71C;
+}
+
+.news__articles_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+}
+
+.news__articles_list-item {
+    width: 26vw;
+    height: 15vw;
+    list-style: none;
+    background-color: #F3ED4B;
+}
+
+.news__articles_link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.news__articles_date {
+    justify-self: flex-start;
+    align-self: flex-start;
+    padding: 0.5vw;
+    font-size: 2vw;
+    font-family: 'Roboto Thin', sans-serif;
+    color: #ffffff;
+    background-color: #FFDB03;
+}
+
+.news__articles_title {
+    width: 100%;
+    height: 4vw;
+    margin: 0;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Roboto Thin', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    background-color: #E2C829;
+    overflow: hidden;
+}
+
+.news__articles_link-project {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.news__articles_title-progect {
+    width: 100%;
+    height: 4vw;
+    margin: 0;
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Roboto Thin', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    background-color: #E2C829;
+    overflow: hidden;
+}
+
+/*footer*/
+footer {
+    margin-top: 10vw;
+    background-color: #C4C4C4;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 7vw;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__list_item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 33%;
+    font-family: 'Roboto Thin', sans-serif;
+    font-weight: bold;
+    list-style: none;
+}
+
+.footer__list_logo {
+    font-size: 2vw;
+    color: #ffffff;
+}
+
+.footer__form {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__email {
+    padding: 0.4vw;
+    font-size: 1.6vw;
+    border: none;
+    border-radius: 0.5vw 0 0 0.5vw;
+    outline: none;
+}
+
+.footer__submit {
+    padding: 0.2vw;
+    font-size: 1.8vw;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    border: none;
+    border-radius:  0 0.5vw 0.5vw 0;
+    background-color: #ba0da9;
+}
+
+.footer__submit:hover {
+    background-color: #66075c;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.footer__link {
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #858585;
+}
+
+.footer__list_contacts-item {
+    list-style: none;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="wow.min.js"></script>
+</head>
+<body>
+<nav>
+    <ul class="nav__list">
+        <li class="nav__list_item"><a class="nav__list_link" href="#">Главная</a></li>
+        <li class="nav__list_item"><a class="nav__list_link" href="projects.html">Проекты</a></li>
+        <li class="nav__list_item nav__list_logo-cont"><img class="nav__list_logo" src="img/logo.png" alt="logo" width="20%"></li>
+        <li class="nav__list_item"><a class="nav__list_link" href="news.html">Новости</a></li>
+        <li class="nav__list_item"><a class="nav__list_link" href="messages.html">Обращения</a></li>
+    </ul>
+</nav>
+<header>
+    <div class="header__hello wow fadeInUp">
+        <h2 class="header__hello_header">Давайте знакомиться!</h2>
+        <p>
+        <pre class="header__hello_text">
+   Мы творческий коллектив “Новая Линия”
+Создаём видеоролики о самом разном и интересном!
+
+На нашем сайте ты можешь следить за  жизнью коллектива
+или просто написать отзыв в разделе обращений)
+        </pre>
+        </p>
+    </div>
+</header>
+<main>
+    <div class="news">
+        <div class="news__articles">
+            <h2 class="news__title wow fadeInLeft">Новости</h2>
+            <ul class="news__articles_list">
+                <li class="news__articles_list-item wow zoomIn">
+                    <article>
+                        <a class="news__articles_link" href="#">
+                            <time class="news__articles_date" datetime="2021-03-25">2021-03-25</time>
+                            <p class="news__articles_title">title</p>
+                        </a>
+                    </article>
+                </li>
+                <li class="news__articles_list-item wow zoomIn">
+                    <article>
+                        <a class="news__articles_link" href="#">
+                            <time class="news__articles_date" datetime="2021-03-25">2021-03-25</time>
+                            <p class="news__articles_title">title</p>
+                        </a>
+                    </article>
+                </li>
+                <li class="news__articles_list-item wow zoomIn">
+                    <article>
+                        <a class="news__articles_link" href="#">
+                            <time class="news__articles_date" datetime="2021-03-25">2021-03-25</time>
+                            <p class="news__articles_title">title</p>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+        </div>
+        <div class="news__projects">
+            <h2 class="news__title wow fadeInLeft">Проекты</h2>
+            <ul class="news__articles_list">
+                <li class="news__articles_list-item wow zoomIn">
+                    <article>
+                        <a class="news__articles_link-project" href="#">
+                            <p class="news__articles_title-progect">title</p>
+                        </a>
+                    </article>
+                </li>
+                <li class="news__articles_list-item wow zoomIn">
+                    <article>
+                        <a class="news__articles_link-project" href="#">
+                            <p class="news__articles_title">title</p>
+                        </a>
+                    </article>
+                </li>
+                <li class="news__articles_list-item wow zoomIn">
+                    <article>
+                        <a class="news__articles_link-project" href="#">
+                            <p class="news__articles_title">title</p>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer>
+    <ul class="footer__list">
+        <li class="footer__list_item footer__list_logo"><a>New Line</a></li>
+        <li class="footer__list_item">
+            <form class="footer__form">
+                <input class="footer__email" type="email" placeholder="Введите адрес эл. почты" required>
+                <input class="footer__submit" type="submit" value="Подписаться">
+            </form>
+        </li>
+        <li class="footer__list_item">
+            <ul class="footer__list_contacts">
+                <li class="footer__list_contacts-item"><a class="footer__link" href="#">ВКонтакте</a></li>
+                <li class="footer__list_contacts-item"><a class="footer__link" href="#">Написать нам</a></li>
+            </ul>
+        </li>
+    </ul>
+</footer>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>
