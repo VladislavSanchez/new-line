@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Обращения</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="frame/animate.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <img class="nav__logo" src="img/logo.png" alt="logo">
+    <button class="nav__button"><img src="img/menu.svg" width="40vw" height="40vw"></button>
+    <ul class="nav__list nav__list_close">
+        <li class="nav__list_item"><a class="nav__list_link" href="index.html">Главная</a></li>
+        <li class="nav__list_item"><a class="nav__list_link" href="projects.html">Проекты</a></li>
+        <li class="nav__list_item nav__list_logo-cont"><img class="nav__list_logo" src="img/logo.png" alt="logo" width="20%"></li>
+        <li class="nav__list_item"><a class="nav__list_link" href="news.html">Новости</a></li>
+        <li class="nav__list_item"><a class="nav__list_link" href="#">Обращения</a></li>
+    </ul>
+</nav>
+<header>
+    <div class="header__hello header__hello_right">
+        <h2 class="news__title wow fadeInRight">Обращения</h2>
+    </div>
+</header>
+<main>
+    <form class="form-ms">
+        <div class="user-info wow fadeIn">
+            <div class="info-block">
+               <label>
+                   Тип обращения:
+                   <select class="user-info__select" name="type">
+                       <option>Отзыв</option>
+                       <option>Жалоба</option>
+                       <option>Предложение</option>
+                       <option>Запрос</option>
+                   </select>
+                </label>
+                <label>Ваш E-mail:<input name="contacts" class="user-info__email" type="email" required></label>
+            </div>
+            <div class="info-block-2">
+                <label>Ваше имя:<input name="name" class="user-info__name" type="text" required></label>
+                <p class="user__info_ok">Нажимая на "отправить" Вы соглашаетесь с политикой обработки персональных данных</p>
+            </div>
+        </div>
+        <div class="message_area wow fadeIn">
+            <textarea name="mess" class="user-info__ms" maxlength="1000" required></textarea>
+            <input class="user-info__sbm" type="submit" value="Отправить">
+        </div>
+    </form>
+</main>
+<footer>
+    <ul class="footer__list">
+        <li class="footer__list_item footer__list_logo"><a href="index.html">New Line</a></li>
+        <li class="footer__list_item">
+            <form class="footer__form">
+                <input class="footer__email" type="email" placeholder="Введите адрес эл. почты" required>
+                <input class="footer__submit" type="submit" value="Подписаться">
+            </form>
+        </li>
+        <li class="footer__list_item">
+            <ul class="footer__list_contacts">
+                <li class="footer__list_contacts-item"><a class="footer__link" href="https://vk.com/newlinenew?from=groups%253Fact%253Dlist" target="_blank">ВКонтакте</a></li>
+                <li class="footer__list_contacts-item"><a class="footer__link" href="messages.html">Написать нам</a></li>
+            </ul>
+        </li>
+    </ul>
+</footer>
+<div class="ms_block hidden">
+    <dialog class="message">
+        <h2 class="message__title"></h2>
+        <img src="" alt="error" class="message__img">
+        <img src="img/close.svg" alt="close" class="message__close">
+    </dialog>
+</div>
+</body>
+<script src="frame/wow.min.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/sendEmail.js"></script>
+<script src="js/closePopup.js"></script>
+<script src="js/sendMess.js"></script>
+<script>new WOW().init();</script>
+</html>
